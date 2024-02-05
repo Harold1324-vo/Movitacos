@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ModificarMeseroFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Modificar Mesero"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#fd6918"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/background_admin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etIdTaqueria"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/etIdMesero"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/while_background_edt"
+                            android:drawableStart="@drawable/ic_person"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Id Mesero"
+                            android:inputType="number"
+                            android:paddingStart="10dp"
+                            android:textColorHint="#000000"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnBuscarId"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/ic_search"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etUsuarioMesero"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/while_background_edt"
+                        android:drawableStart="@drawable/ic_person"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Nombre del Mesero"
+                        android:inputType="textPersonName"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/etTelefonoMesero"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/while_background_edt"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Número Telefónico"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        app:endIconMode="password_toggle">
+
+                        <EditText
+                            android:id="@+id/etContrasenaMesero"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/while_background_edt"
+                            android:drawableStart="@drawable/ic_password"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Nueva Contraseña"
+                            android:inputType="textPassword"
+                            android:maxLength="20"
+                            android:paddingStart="10dp"
+                            android:textColorHint="#000000"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#fd6918"
+            android:text="Actualizar"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</FrameLayout>

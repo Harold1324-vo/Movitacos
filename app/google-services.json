@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "832099359597",
+    "project_id": "verificationandroid",
+    "storage_bucket": "verificationandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832099359597:android:69410793373a1b2657d864",
+        "android_client_info": {
+          "package_name": "com.example.movitaco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832099359597-0a876pm5evvjvfmkj10ucv8419n44f9v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.movitaco",
+            "certificate_hash": "17d0807c8467b7bb54b6eb219f7933ba1bd07423"
+          }
+        },
+        {
+          "client_id": "832099359597-00i45gucaiujrdco5ivrcsjefd79q3n4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD75HQ-TR8upzF-cTL8fpA7Lhk3pDjvI_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832099359597-00i45gucaiujrdco5ivrcsjefd79q3n4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

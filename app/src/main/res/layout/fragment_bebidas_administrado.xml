@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BebidasAdministradoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:text="Agregar Bebidas" />
+
+        <Button
+            android:id="@+id/btnAgregarBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/teal_200"
+            android:fontFamily="sans-serif-light"
+            android:text="Agregar Bebidas"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnModificarBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/teal_200"
+            android:fontFamily="sans-serif-light"
+            android:text="Modificar Bebidas"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnEliminarBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/teal_200"
+            android:fontFamily="sans-serif-light"
+            android:text="Eliminar Bebida"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</FrameLayout>

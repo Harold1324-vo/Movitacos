@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/while_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="Mesa/Cliente"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:textSize="30sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_table" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnAgregarPedidoLocal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:backgroundTint="#fd6918"
+                            android:text="Agregar"
+                            app:cornerRadius="10dp"/>
+
+                        <Button
+                            android:id="@+id/btnCuentaLocal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="19dp"
+                            android:backgroundTint="#fd6918"
+                            android:text="Modificar"
+                            app:cornerRadius="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

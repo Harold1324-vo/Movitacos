@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".RegistroFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Registra Tu Taqueria"
+            android:textColor="#EF6C00"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/while_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtTaqueria"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/while_background_edt"
+                        android:drawableStart="@drawable/ic_person"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Nombre de la Taqueria"
+                        android:inputType="textPersonName"
+                        android:maxLength="25"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/while_background_edt"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Correo Electrónico"
+                        android:maxLength="100"
+                        android:inputType="textEmailSubject"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edtTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/while_background_edt"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Número Telefono"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edtDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/while_background_edt"
+                        android:drawableStart="@drawable/ic_map"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Dirección de la Taqueria"
+                        android:inputType="textPersonName"
+                        android:maxLength="250"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        app:endIconMode="password_toggle">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/edtContraseña"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/while_background_edt"
+                            android:drawableStart="@drawable/ic_password"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Ingresa una contraseña"
+                            android:inputType="textPassword"
+                            android:maxLength="100"
+                            android:paddingStart="10dp"
+                            android:textColorHint="#000000"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        app:endIconMode="password_toggle">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/edtConfirmarContraseña"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/while_background_edt"
+                            android:drawableStart="@drawable/ic_password"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Confirma la contraseña"
+                            android:inputType="textPassword"
+                            android:maxLength="100"
+                            android:paddingStart="10dp"
+                            android:textColorHint="#000000"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="#fd6918"
+            android:minHeight="48dp"
+            android:text="Registrarse"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioSesionFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.movitaco.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.movitaco.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioSesionFragment"
+        android:name="com.example.movitaco.InicioSesionFragment"
+        android:label="fragment_inicio_sesion"
+        tools:layout="@layout/fragment_inicio_sesion" >
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_principalAdministradorFragment"
+            app:destination="@id/principalAdministradorFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_principalMeseroFragment"
+            app:destination="@id/principalMeseroFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_registroFragment"
+            app:destination="@id/registroFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/principalAdministradorFragment"
+        android:name="com.example.movitaco.PrincipalAdministradorFragment"
+        android:label="fragment_principal_administrador"
+        tools:layout="@layout/fragment_principal_administrador" >
+        <action
+            android:id="@+id/action_principalAdministradorFragment_to_alimentosAdministradorFragment"
+            app:destination="@id/alimentosAdministradorFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_principalAdministradorFragment_to_meserosAdministradorFragment"
+            app:destination="@id/meserosAdministradorFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_principalAdministradorFragment_to_mesasAdministradorFragment"
+            app:destination="@id/mesasAdministradorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalMeseroFragment"
+        android:name="com.example.movitaco.PrincipalMeseroFragment"
+        android:label="fragment_principal_mesero"
+        tools:layout="@layout/fragment_principal_mesero" >
+        <action
+            android:id="@+id/action_principalMeseroFragment_to_ventaLocalFragment"
+            app:destination="@id/ventaLocalFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_principalMeseroFragment_to_ventaExternaFragment"
+            app:destination="@id/ventaExternaFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+        <action
+            android:id="@+id/action_principalMeseroFragment_to_cuentaMeseroFragment"
+            app:destination="@id/cuentaMeseroFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/ventaLocalFragment"
+        android:name="com.example.movitaco.VentaLocalFragment"
+        android:label="fragment_venta_local"
+        tools:layout="@layout/fragment_venta_local" />
+    <fragment
+        android:id="@+id/ventaExternaFragment"
+        android:name="com.example.movitaco.VentaExternaFragment"
+        android:label="fragment_venta_externa"
+        tools:layout="@layout/fragment_venta_externa" />
+    <fragment
+        android:id="@+id/cuentaMeseroFragment"
+        android:name="com.example.movitaco.CuentaMeseroFragment"
+        android:label="fragment_cuenta_mesero"
+        tools:layout="@layout/fragment_cuenta_mesero" />
+    <fragment
+        android:id="@+id/alimentosAdministradorFragment"
+        android:name="com.example.movitaco.AlimentosAdministradorFragment"
+        android:label="fragment_alimentos_administrador"
+        tools:layout="@layout/fragment_alimentos_administrador" >
+        <action
+            android:id="@+id/action_alimentosAdministradorFragment_to_agregarAlimentosFragment"
+            app:destination="@id/agregarAlimentosFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_alimentosAdministradorFragment_to_modificarAlimentoFragment"
+            app:destination="@id/modificarAlimentoFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_alimentosAdministradorFragment_to_eiminarAlimentoFragment"
+            app:destination="@id/eiminarAlimentoFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarAlimentosFragment"
+        android:name="com.example.movitaco.AgregarAlimentosFragment"
+        android:label="fragment_agregar_alimentos"
+        tools:layout="@layout/fragment_agregar_alimentos" />
+    <fragment
+        android:id="@+id/modificarAlimentoFragment"
+        android:name="com.example.movitaco.ModificarAlimentoFragment"
+        android:label="fragment_modificar_alimento"
+        tools:layout="@layout/fragment_modificar_alimento" />
+    <fragment
+        android:id="@+id/eiminarAlimentoFragment"
+        android:name="com.example.movitaco.EiminarAlimentoFragment"
+        android:label="fragment_eiminar_alimento"
+        tools:layout="@layout/fragment_eiminar_alimento" />
+    <fragment
+        android:id="@+id/meserosAdministradorFragment"
+        android:name="com.example.movitaco.MeserosAdministradorFragment"
+        android:label="fragment_meseros_administrador"
+        tools:layout="@layout/fragment_meseros_administrador" >
+        <action
+            android:id="@+id/action_meserosAdministradorFragment_to_modificarMeseroFragment"
+            app:destination="@id/modificarMeseroFragment" />
+        <action
+            android:id="@+id/action_meserosAdministradorFragment_to_agregarMeseroFragment"
+            app:destination="@id/agregarMeseroFragment" />
+        <action
+            android:id="@+id/action_meserosAdministradorFragment_to_eliminarMeseroFragment"
+            app:destination="@id/eliminarMeseroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarMesasFragment"
+        android:name="com.example.movitaco.AgregarMesasFragment"
+        android:label="fragment_agregar_mesas"
+        tools:layout="@layout/fragment_agregar_mesas" />
+    <fragment
+        android:id="@+id/agregarMeseroFragment"
+        android:name="com.example.movitaco.AgregarMeseroFragment"
+        android:label="fragment_agregar_mesero"
+        tools:layout="@layout/fragment_agregar_mesero" />
+    <fragment
+        android:id="@+id/eliminarMesasFragment"
+        android:name="com.example.movitaco.EliminarMesasFragment"
+        android:label="fragment_eliminar_mesas"
+        tools:layout="@layout/fragment_eliminar_mesas" />
+    <fragment
+        android:id="@+id/eliminarMeseroFragment"
+        android:name="com.example.movitaco.EliminarMeseroFragment"
+        android:label="fragment_eliminar_mesero"
+        tools:layout="@layout/fragment_eliminar_mesero" />
+    <fragment
+        android:id="@+id/mesasAdministradorFragment"
+        android:name="com.example.movitaco.MesasAdministradorFragment"
+        android:label="fragment_mesas_administrador"
+        tools:layout="@layout/fragment_mesas_administrador" >
+        <action
+            android:id="@+id/action_mesasAdministradorFragment_to_eliminarMesasFragment"
+            app:destination="@id/eliminarMesasFragment" />
+        <action
+            android:id="@+id/action_mesasAdministradorFragment_to_modificarMesasFragment"
+            app:destination="@id/modificarMesasFragment" />
+        <action
+            android:id="@+id/action_mesasAdministradorFragment_to_agregarMesasFragment"
+            app:destination="@id/agregarMesasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modificarMesasFragment"
+        android:name="com.example.movitaco.ModificarMesasFragment"
+        android:label="fragment_modificar_mesas"
+        tools:layout="@layout/fragment_modificar_mesas" />
+    <fragment
+        android:id="@+id/modificarMeseroFragment"
+        android:name="com.example.movitaco.ModificarMeseroFragment"
+        android:label="fragment_modificar_mesero"
+        tools:layout="@layout/fragment_modificar_mesero" />
+</navigation>

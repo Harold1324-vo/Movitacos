@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InicioSesionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Inicia Sesión"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#fd6918"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ingresa con tu cuenta"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:textColor="#fd6918"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/tacoLottie"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="-15dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/taco" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/background_admin"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spRol"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/style_spinner"
+                        android:contentDescription="@string/app_name" />
+
+                    <EditText
+                        android:id="@+id/edtUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/while_background_edt"
+                        android:drawableStart="@drawable/ic_person"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="10dp"
+                        android:ems="10"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp"
+                        android:hint="Usuario"
+                        android:inputType="textPersonName"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        app:endIconMode="password_toggle">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/edtContrasena"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/while_background_edt"
+                            android:drawableStart="@drawable/ic_password"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Contraseña"
+                            android:inputType="textPassword"
+                            android:maxLength="100"
+                            android:paddingStart="10dp"
+                            android:textColorHint="#000000"
+                            android:textSize="16sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Inicia Sesión"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:backgroundTint="#fd6918"
+            android:textSize="20sp"
+            app:cornerRadius="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="¿No tienes una cuenta?"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Registrate"
+                android:textAlignment="center"
+                android:textColor="#fd6918" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
